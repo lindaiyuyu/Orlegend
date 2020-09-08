@@ -4,6 +4,33 @@
    Description: Custom JS file
 */
 
+function showImg(){ 
+document.getElementById("wxImg").style.display='block'; 
+} 
+function hideImg(){ 
+document.getElementById("wxImg").style.display='none'; 
+} 
+
+function showImg1(){ 
+document.getElementById("wxImg1").style.display='block'; 
+} 
+function hideImg1(){ 
+document.getElementById("wxImg1").style.display='none'; 
+} 
+
+function showImg2(){ 
+document.getElementById("wxImg2").style.display='block'; 
+} 
+function hideImg2(){ 
+document.getElementById("wxImg2").style.display='none'; 
+} 
+
+function showImg3(){ 
+document.getElementById("wxImg3").style.display='block'; 
+} 
+function hideImg3(){ 
+document.getElementById("wxImg3").style.display='none'; 
+} 
 
 (function($) {
     "use strict"; 

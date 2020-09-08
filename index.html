@@ -43,8 +43,7 @@
 	
 	<!-- Mobile Menu Toggle Button -->
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-awesome fas fa-bars"></span>
-		<span class="navbar-toggler-awesome fas fa-times"></span>
+						<img class="img-fluid" src="HTML/icon/menu.svg" alt="Menu">
 	</button>
 	<!-- end of mobile menu toggle button -->
 
@@ -70,18 +69,21 @@
 			</li>
 		</ul>
 		<span class="nav-item social-icons">
-			<span class="fa-stack">
-				<a href="#your-link">
-					<i class="fas fa-circle fa-stack-2x facebook"></i>
-					<i class="fab fa-facebook-f fa-stack-1x"></i>
+				<a href="javascript:void(0)" onMouseOut="hideImg()" onmouseover="showImg()"><img class="img-fluid" src="HTML/icon/alipay.svg" alt="支付宝"></a> 
+				<div id="wxImg" style="display:none;height:50px;back-ground:#f00;position:fixed;right:5px;"><img class="img-fluid" src="HTML/icon/ali.png" alt="支付宝"></div>
 				</a>
 			</span>
-			<span class="fa-stack">
-				<a href="#your-link">
-					<i class="fas fa-circle fa-stack-2x twitter"></i>
-					<i class="fab fa-twitter fa-stack-1x"></i>
+		<span class="nav-item social-icons">
+				<a href="javascript:void(0)" onMouseOut="hideImg1()" onmouseover="showImg1()"><img class="img-fluid" src="HTML/icon/qq.svg" alt="QQ"></a> 
+				<div id="wxImg1" style="display:none;height:50px;back-ground:#f00;position:fixed;right:5px;"><img class="img-fluid" src="HTML/icon/qq.png" alt="QQ"></div>
 				</a>
 			</span>
+					<span class="nav-item social-icons">
+						<a  href="tencent://Message/?Uin=209615122&websiteName=q-zone.qq.com&Menu=yes" target="_blank">
+						<img class="img-fluid" src="HTML/icon/kefu.svg" alt="GitHub">
+						</a>
+					</span>
+
 		</span>
 	</div>
 </nav> <!-- end of navbar -->
@@ -111,54 +113,6 @@
 	</div> <!-- end of header-content -->
 </header> <!-- end of header -->
 <!-- end of header -->
-
-
-<!-- Customers >
-<div class="slider-1">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h5>Trusted By</h5>
-				<div class="slider-container">
-					<div class="swiper-container image-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-1.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-2.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-3.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-4.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-5.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="image-container">
-									<img class="img-responsive" src="HTML/images/customer-logo-6.png" alt="林黛玉打镇关西">
-								</div>
-							</div>
-						</div>
-					</div> 
-				</div> 
-			</div> 
-		</div> 
-	</div> 
-</div>
 
 <!-- Services -->
 <div id="services" class="cards-1">
@@ -269,33 +223,6 @@
 <!-- end of details 1 -->
 
 
-<!-- Video>
-<div id="Video" class="basic-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h2>Check Out The Video</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="image-container">
-					<div class="video-wrapper">
-						<a class="popup-youtube" href="Flow.mp4" data-effect="fadeIn">
-							<img class="img-fluid" src="HTML/images/Timer.png" alt="林黛玉打镇关西">
-							<span class="video-play-button">
-								<span></span>
-							</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> <!-- end of basic-3 -->
-<!-- end of video -->
-
-
 <!-- Testimonials -->
 <div id="Download" class="slider-2">
 	<div class="container">
@@ -371,42 +298,42 @@
 					<ul class="list-unstyled li-space-lg">
 						<li class="media">
 							<i class="fas fa-square"></i>
-							<div class="media-body"><a class="turquoise" href="https://github.com/lindaiyuyu/Orlegend" target="_blank">GitHub, Inc.</a></div>
+							<div class="media-body"><a class="turquoise" href="https://github.com" target="_blank">GitHub, Inc.</a></div>
+							<i class="fas fa-square"></i>
+							<div class="media-body"><a class="turquoise" href="https://gitee.com" target="_blank">码云</a></div>
+						</li>
+						<li class="media">
+							<i class="fas fa-square"></i>
+							<div class="media-body"><a class="turquoise" href="https://azure.microsoft.com/zh-cn/services/devops/" target="_blank">Azure DevOps</a></div>
+							<i class="fas fa-square"></i>
+							<div class="media-body"><a class="turquoise" href="https://aliyun.com" target="_blank">阿里云</a></div>
 						</li>
 					</ul>
 				</div>
 			</div> <!-- end of col -->
 			<div class="col-md-4">
 				<div class="footer-col last">
-					<h4>Contact Without</h4>
+					<h4>Contact With</h4>
 					<span class="fa-stack">
-						<a href="#your-link">
-							<i class="fas fa-circle fa-stack-2x"></i>
-							<i class="fab fa-facebook-f fa-stack-1x"></i>
+						<a href="#your-link1">
+				<a href="javascript:void(0)" onMouseOut="hideImg2()" onmouseover="showImg2()"><img class="img-fluid" src="HTML/icon/alipayb.svg" alt="支付宝"></a> 
+				<div id="wxImg2" style="display:none;height:50px;back-ground:#f00;position:relative;bottom:350px;"><img  src="HTML/icon/ali.png" alt="支付宝"></div>
+				</a>
+					</span>
+					<span class="fa-stack">
+						<a href="#your-link2">
+				<a href="javascript:void(0)" onMouseOut="hideImg3()" onmouseover="showImg3()"><img class="img-fluid" src="HTML/icon/qqb.svg" alt="QQ"></a> 
+				<div id="wxImg3" style="display:none;height:50px;back-ground:#f00;position:relative;bottom:350px;"><img  src="HTML/icon/qq.png" alt="QQ"></div>
 						</a>
 					</span>
 					<span class="fa-stack">
-						<a href="#your-link">
-							<i class="fas fa-circle fa-stack-2x"></i>
-							<i class="fab fa-twitter fa-stack-1x"></i>
+						<a href="https://gitee.com" target="_blank">
+						<img class="img-fluid" src="HTML/icon/gitee.svg" alt="码云">
 						</a>
 					</span>
 					<span class="fa-stack">
-						<a href="#your-link">
-							<i class="fas fa-circle fa-stack-2x"></i>
-							<i class="fab fa-google-plus-g fa-stack-1x"></i>
-						</a>
-					</span>
-					<span class="fa-stack">
-						<a href="#your-link">
-							<i class="fas fa-circle fa-stack-2x"></i>
-							<i class="fab fa-instagram fa-stack-1x"></i>
-						</a>
-					</span>
-					<span class="fa-stack">
-						<a href="#your-link">
-							<i class="fas fa-circle fa-stack-2x"></i>
-							<i class="fab fa-linkedin-in fa-stack-1x"></i>
+						<a  href="https://github.com" target="_blank">
+						<img class="img-fluid" src="HTML/icon/github.svg" alt="GitHub">
 						</a>
 					</span>
 				</div> 
@@ -415,7 +342,6 @@
 	</div> <!-- end of container -->
 </div> <!-- end of footer -->  
 <!-- end of footer -->
-
 
 <!-- Copyright -->
 <div class="copyright">
